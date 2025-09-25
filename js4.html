@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P4</title>
+  </head>
+  <body>
+    <h1>Problem 4: odd numbers</h1>
+    <script>
+      let num1 = parseInt(prompt("What is the smallest number?"));
+      let num2 = parseInt(prompt("What is the largest number?"));
+      let sum = 0;
+      for (let i = num1; i <= num2; i++) {
+        if (i % 2 !== 0) {
+          document.write(i + " ");
+          sum += i;
+        }
+      }
+      document.write("<br>The sum of odd numbers is " + sum);
+    </script>
+  </body>
+</html>
